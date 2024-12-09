@@ -1,0 +1,296 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(212, 24, 24);
+    padding: 2rem;
+}
+.left{
+    display: flex;
+    
+}
+.my{
+    height: 60px;
+    width: 60px;
+    
+}
+
+h1{
+    color: white;
+}
+
+nav a{
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    color: white;
+    padding-top: 0.3rem;
+    cursor: pointer;
+
+}
+.search{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(246, 229, 229);
+    padding: 1rem 0rem;
+}
+.searching{
+    width: 400px;
+    max-width: 60%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+
+}
+.search button{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    background-color: rgb(212, 24, 24);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+  
+
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/book\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.hero > h2{
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+}
+.hero > button{
+    background-color:rgb(212, 24, 24); 
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.mover > h2{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.images{
+    height: 400px;
+
+}
+.card{
+    border: 0.5rem solid ;
+    background-color: rgb(246, 229, 229);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 8px 9px rgb(78, 71, 76);
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+
+   
+
+}
+.movie{
+    display: flex;
+    text-align: center;
+    overflow-x: scroll;
+    
+}
+.card > h3{
+    font-size: 2rem;
+}
+.bot{
+    margin-top: 2rem;
+    text-align: center;
+    
+
+}
+
+.bot > img{
+    max-width: 80%;
+}
+
+.card:hover{
+    background-color: darkcyan;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    
+}
+button:hover{
+    color: rgb(6, 14, 14);
+}
+nav a:hover{
+    color: rgb(6, 14, 14);
+}
+
+@media (max-width:650px){
+    .logo{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .movie{
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+    .hero{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .hero > h2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+}
+
+.big {
+    width: 100%;
+    background-color: rgb(67, 66, 66);
+}
+
+
+.one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    height: auto;
+    padding: 1rem;
+    background-color: rgb(67, 66, 66);
+    margin-top: 3.5rem;
+    gap: 1rem; 
+}
+
+.lef > p {
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.rig > button {
+    background-color: rgb(212, 24, 24);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    text-align: center;
+}
+
+ .two {
+    background-color: rgb(106, 103, 103);
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    padding: 1.5rem;
+    gap: 1rem;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.oh:hover{
+    transform: scale(1.05);
+}
+
+.oh {
+    height: 4rem;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    
+} 
+
+.first, .second, .third {
+    text-align: center;
+}
+
+.first, .second, .third p {
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(255, 249, 249);
+}
+
+
+.three {
+    margin: 1rem auto;
+    padding: 1rem;
+    color: rgb(255, 249, 249);
+    font-size: 1rem;
+    text-align: center; 
+}
+
+.three h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+
+button:hover {
+    color: rgb(6, 14, 14);
+    opacity: 0.9; 
+}
+
+
+@media (max-width: 768px) {
+    .one {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .lef > p {
+        font-size: 1rem; 
+    }
+
+    .rig > button {
+        width: 80%; 
+    }
+
+    .two {
+        flex-direction: column; 
+    }
+
+    .three {
+        margin: 0 auto;
+        padding: 0.5rem;
+        font-size: 0.9rem; 
+    }
+
+    .three h3 {
+        font-size: 1rem; 
+    }
+   
+
+}
